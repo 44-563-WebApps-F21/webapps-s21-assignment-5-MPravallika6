@@ -19,6 +19,23 @@
 
 <body>
   <h1>Animals by Maddelavedu Pravallika</h1>
+
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="animals.html">Interesting Animals</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" ></button> 
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup"></div>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-link active">
+        <a class="nav-link active" href="plane.html">plane</a>
+      </li>
+      <li class="nav-link active">
+        <a class="nav-link active" href="train.html">train</a>
+      </li>
+     </ul>
+     </nav> 
+     <br> 
+     
   <div class="container">
     <div class="row">
       <div class="col-sm-2">M</div>
@@ -40,19 +57,22 @@
   <p>The animal names row breaks first as the size/alphabets of the animal name is big. </p>
 
   <div>
+    <h2>Image Responsive</h2>
     <img src="Affenpinscher.jpg" alt="Affenpinscher" width="400" height="500" />
     <img src="gorilla.jpg" alt="Gorilla" width="400" height="500" />
     <img src="penguins.jpg" alt="Penguins" width="400" height="500" />
   </div>
   <div class="img-thumbnail">
+    <h2>Image Thumbnails</h2>
     <img src="Affenpinscher.jpg" alt="Affenpinscher" width="400" height="500" />
  <img src="gorilla.jpg" alt="Gorilla" width="400" height="500" />
  <img src="penguins.jpg" alt="Penguins" width="400" height="500" />
   </div>
-  <hr>
-  <h4 style="padding: 5px,5px;font-family: Arial, Helvetica, sans-serif;">Tables For Animal And City With Car Model</h4>
-  <table class="table table-hover table-striped">
-    <thead class = "table-dark">
+  <br>
+  <h2>Table</h2>
+  <table class="table table-striped">
+  <caption-side: top>Animal,City And Car Model</caption>
+    <thead>
       <tr>
         <th>Letter</th>
         <th>Animal</th>
@@ -61,7 +81,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
+        <tr>
         <td>M</td>
         <td>Macaroni Penguin</td>
         <td>Madhapur</td>
@@ -99,37 +119,98 @@
       </tr>
     </tbody>
   </table>
+  <br>
 
-</body>
-</html>
-<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups"></div>
-<div class="btn btn-group-lg" role="group">
+  <h2>Buttons and Button Groups</h2> 
+<div class="btn-toolbar" role="toolbar">
+  <button type="button" class="btn btn-default">M</button>
+  <button type="button" class="btn btn-default">A</button>
+  <button type="button" class="btn btn-default">D</button>
+  <button type="button" class="btn btn-default">D</button>
+  <button type="button" class="btn btn-default">E</button>
+  <button type="button" class="btn btn-default">L</button>
+</div>
+<br>
+<div class = "btn-toolbar" role = "toolbar" aria-label="First group success">
   <button type="button" class="btn btn-success">M</button>
   <button type="button" class="btn btn-success">A</button>
-</div>
-
-<div class="btn btn-group-lg" role="group" aria-label="Basic example">
-  <button type="button" class="btn btn-alert">D</button>
-  <button type="button" class="btn btn-alert">D</button>
-</div>
-
-<div class="btn btn-group-lg" role="group" aria-label="Basic example">
-  <button type="button" class="btn btn-danger">E</button>
-  <button type="button" class="btn btn-danger">L</button>
-</div>
-</div>
-
-<br>
-<br>
-
-<div class="container">
-<div class="dropdown"></div>
-  <button class="dropdown-toggle" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" >
-    Dropdown
-  </button>
-  <div class="dropdown-menu">
-    <a class="dropdown-item" href="plane.html">Plane </a>
-    <a class="dropdown-item" href="train.html">Train</a>
+  <button type="button" class="btn btn-success">E</button>
   </div>
+  <br>
+  <div class = "btn-toolbar" role = "toolbar" aria-label="Second group warning">
+    <button type="button" class="btn btn-warning">D</button>
+    <button type="button" class="btn btn-warning">L</button>
+</div>
+<br>
+<div class = "btn-toolbar" role = "toolbar" aria-label="Third group danger">
+    <button type="button" class="btn btn-danger">D</button>
 </div>
 </div>
+<br>
+
+<br>
+<br>
+
+  <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+      <button type="button" class="btn btn-primary">1</button>
+      <button type="button" class="btn btn-primary">2</button>
+    
+      <div class="btn-group" role="group">
+        <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Dropdown
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+          <li><a class="dropdown-item" href="plane.html">Plain</a></li>
+          <li><a class="dropdown-item" href="train.html">Train</a></li>
+        </ul>
+      </div>
+    </div>
+<br>
+    <br>
+
+     <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputAnimal" class="form-label">Enter your Animal</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="form-check">
+        <label class="form-check-label"> Sign up for newsletter?</label>
+        <input type="checkbox" class="form-check-input">  
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <br>
+    <br>
+    <div class="Card" style="width: 18rem;">
+      <img src="penguins.jpg"  alt="...">
+      <div class="card-body">
+        <p>Macaroni penguins</p>
+        <p class="card-text">The macaroni penguin (Eudyptes chrysolophus) is a species of penguin found from the Subantarctic to the Antarctic Peninsula. One of six species of crested penguin, it is very closely related to the royal penguin, and some authorities consider the two to be a single species.</p>
+        <a href="https://en.wikipedia.org/wiki/Macaroni_penguin" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="Affenpinscher.jpg"  alt="...">
+      <div class="card-body">
+        <p>Affenpinscher</p>
+        <p class="card-text">An Affenpinscher generally weighs 6.5 to 13.2 pounds (2.9 to 6.0 kg) and stands 9 to 12 inches (23 to 30 cm) tall at the withers. It has a harsh rough coat when it is not clippered and if clippered it can be softer and fluffier.</p>
+        <a href="https://en.wikipedia.org/wiki/Affenpinscher" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="gorilla.jpg" alt="...">
+      <div class="card-body">
+        <p>Eastern Gorilla</p>
+        <p class="card-text">The eastern gorilla (Gorilla beringei) is a critically endangered species of the genus Gorilla and the largest living primate. At present, the species is subdivided into two subspecies. The eastern lowland gorilla or Grauer’s gorilla (G. b. graueri) is more populous, at about 3,800 individuals.</p>
+        <a href="https://en.wikipedia.org/wiki/Eastern_gorilla" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+  </body>
+  </html>
